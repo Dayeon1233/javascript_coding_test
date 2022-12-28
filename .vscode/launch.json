@@ -22,7 +22,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/level1/최소직사각형",
+      "program": "${workspaceFolder}/TopCoder/05_05_친구수",
       "runtimeExecutable": "/Users/Dayeon/.nvm/versions/node/v16.14.0/bin/node"
     }
   ]
