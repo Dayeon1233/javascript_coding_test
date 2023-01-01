@@ -22,7 +22,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/TopCoder/05_05_친구수",
+      "program": "${workspaceFolder}/TopCoder/05_07_고장난로봇_2",
       "runtimeExecutable": "/Users/Dayeon/.nvm/versions/node/v16.14.0/bin/node"
     }
   ]
