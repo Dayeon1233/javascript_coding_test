@@ -22,7 +22,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/TopCoder/05_08_미로만드는사람",
+      "program": "${workspaceFolder}/TopCoder/05_09_마법의숫자",
       "runtimeExecutable": "/Users/Dayeon/.nvm/versions/node/v16.14.0/bin/node"
     }
   ]
