@@ -1,4 +1,6 @@
 function solution(participant, completion) {
+  partDict = Object.fromEntries(participant);
+  completionDict = Object.fromEntries(completion);
   // var answer = "";
   for (let i = 0; i < completion.length; i++) {
     if (participant.includes(completion[i])) {
@@ -12,6 +14,7 @@ function solution(participant, completion) {
 }
 
 console.log(solution(["leo", "kiki", "eden"], ["eden", "kiki"]));
+
 console.log(
   solution(
     ["marina", "josipa", "nikola", "vinko", "filipa"],
