@@ -10,7 +10,10 @@ function solution(first, second) {
     dict[second[i]] = dict[second[i]] + 1;
   }
 
-  answer = Math.max(answer, ...Object.values(dict));
+  console.log(...Object.values(dict)); // 1 3 1 1 1 1
+  console.log(Object.values(dict)); // [ 1, 3, 1, 1, 1, 1 ]
+
+  answer = Math.max(...Object.values(dict));
   return answer;
 }
 

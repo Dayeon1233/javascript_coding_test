@@ -23,7 +23,7 @@ function dfs(x, y, n, dr, dc, visit, direction) {
     ret +=
       dfs(x + dr[i], y + dc[i], n - 1, dr, dc, visit, direction) * direction[i];
   }
-  visit[x][y] = false;
+  visit[x][y] = false;//현재의 탐색을 종료하고 나오는 부분 따라서 다음 탐색을 하려고 마크했던 것을 제거하고 초기 상태로 돌려놓는 것
 
   return ret;
 }
