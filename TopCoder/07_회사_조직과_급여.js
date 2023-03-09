@@ -11,8 +11,8 @@ function solution(relations) {
     }
     if (yCount === 0) {
       salary.push({ salary: 1, yCount: yCount });
-      q.push({ num: i, salary: 1 }); //i는 몇번째 직원인지, 1은 샐러리
-    } else salary.push({ salary: 0, yCount: yCount }); //0은 샐러리, ycount는 y갯수
+      q.push({ num: i, salary: 1 });
+    } else salary.push({ salary: 0, yCount: yCount });
   }
   while (q.length > 0) {
     let idx = q.shift();
