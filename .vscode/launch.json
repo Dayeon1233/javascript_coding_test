@@ -22,7 +22,7 @@
       "request": "launch",
       "name": "js 디버깅",
       "program": "${file}",
-      "runtimeExecutable": "/Users/Dayeon/.nvm/versions/node/v16.14.0/bin/node"
+      "runtimeExecutable": "/opt/homebrew/bin/node"
     }
   ]
 }
