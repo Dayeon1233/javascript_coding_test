@@ -1,0 +1,20 @@
+//1.arr 배열 크기가 1이라면 리턴 -1
+//2.1번이 아니라면 arr을 끝까지 돌면서 가장 작은수 리턴
+function solution(arr) {
+  if (arr.length == 1) {
+    return [-1];
+  } else {
+    let maxNumber = 999999;
+    var answer = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < maxNumber) {
+        maxNumber = arr[i];
+      }
+    }
+    answer = arr.filter((elem) => elem != maxNumber);
+  }
+
+  return answer;
+}
+
+console.log(solution([4, 3, 2, 1]));
