@@ -14,17 +14,18 @@ function solution(s) {
 console.log(solution("-1 -1"));
 
 //다른풀이2
-function solution(s) {
+function solution2(s) {
   var arr = s.split(" ");
-  arr.sort((a, b) => a - b);
+  //   arr.sort((a, b) => a - b);
+  arr.sort();
 
   var answer = arr[0] + " " + arr[arr.length - 1];
 
   return answer;
 }
-
+console.log(solution3("1 2 3 4"));
 //다른풀이3
-function solution(s) {
+function solution3(s) {
   const arr = s.split(" ");
 
   return Math.min(...arr) + " " + Math.max(...arr);
