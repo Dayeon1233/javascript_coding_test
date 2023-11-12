@@ -1,5 +1,5 @@
 function solution(day, arr){
-  let answer=0;
+  let answer = 0;
   for(let i = 0 ;  i<arr.length ; i++){
     let str = arr[i].toString();
     if(str[1] === day.toString()){
