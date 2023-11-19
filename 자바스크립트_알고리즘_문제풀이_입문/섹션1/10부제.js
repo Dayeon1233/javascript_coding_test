@@ -1,8 +1,19 @@
+// function solution(day, arr){
+//   let answer = 0;
+//   for(let i = 0 ;  i<arr.length ; i++){
+//     let str = arr[i].toString();
+//     if(str[1] === day.toString()){
+//       answer+=1;
+//     } 
+//   }
+//   return answer;
+// }
+
 function solution(day, arr){
   let answer = 0;
   for(let i = 0 ;  i<arr.length ; i++){
-    let str = arr[i].toString();
-    if(str[1] === day.toString()){
+    let num = arr[i] % 10;
+    if(num === day){
       answer+=1;
     } 
   }

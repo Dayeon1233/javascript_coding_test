@@ -1,35 +1,21 @@
 function solution(arr){  
     let answer=Number.MIN_SAFE_INTEGER;
-    let temp = 0;
-    for(let i = 0 ; i<arr.length ; i++){
-        for(let j = 0 ; j<arr.length ; j++){
-            temp += arr[i][j];
+    for(let i = 0 ; i< arr.length ;i++){
+        let tmp = 0, tmp2 = 0;
+        for(let j = 0 ; j< arr.length ; j++){
+            tmp += arr[i][j];
+            tmp2 += arr[j][i];
 
         }
-        answer = Math.max(answer,temp);
-        temp = 0;
+        answer = Math.max(answer,tmp,tmp2);
     }
 
-    for(let j = 0 ; j<arr.length ; j++){
-        for(let i = 0 ;i <arr.length ; i++){
-            temp += arr[i][j];
-        }
-        answer = Math.max(answer,temp);
-        temp = 0;
+    let tmp = 0 , tmp2 = 0;
+    for(let i = 0; i < arr.length ; i++){
+        tmp += arr[i][i];
+        tmp2 += arr[i][arr.length -i -1];
     }
-
-    for(let i = 0 ; i<arr.length ; i++){
-        temp += arr[i][i];
-    }
-    answer = Math.max(answer,temp);
-    temp = 0;
-
-    for(let i = 0,j=arr.length ; i<arr.length ; i++,j--){
-        temp += arr[i][j];
-    }
-    answer = Math.max(answer,temp);
-    temp = 0;
-    
+    answer = Math.max(answer,tmp,tmp2);
     return answer;
 }
 
