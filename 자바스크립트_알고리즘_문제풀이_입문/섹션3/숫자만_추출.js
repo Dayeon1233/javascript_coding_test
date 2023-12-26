@@ -3,8 +3,7 @@ function solution(str){
     for(let x of str){
         if(!isNaN(x)) num +=x;
     }
-    // str.replace(/[^0-9]/g,'');
-    // console.log(str)
+    //num = str.replace(/[^0-9]/g,""); 
     return Number(num);
 }
 

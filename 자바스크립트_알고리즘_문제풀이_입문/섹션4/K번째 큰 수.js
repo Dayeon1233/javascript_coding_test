@@ -3,13 +3,15 @@ function combi(n,r,cnt,result){
         return result.reduce((a,b)=>a+b,0);
     }
 
+    
+    result.push(n[i]);
     combi(n,r,cnt+1,result);
     combi(n,r,cnt,result);
 
 }
 function solution(n, k, card){
     let answer;
-    combi(n,3);
+    combi(n,3,0,[]);
 
     return answer;
 }

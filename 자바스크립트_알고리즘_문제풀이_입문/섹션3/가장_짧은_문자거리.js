@@ -18,7 +18,7 @@ function solution(s, t){
             answer.push(tmp);
         }
         else{
-            answer.push(idxArr[j+1]-i)
+            answer.push(i-idxArr[j])
         }
         if(i === idxArr[j+1]){
             j++;

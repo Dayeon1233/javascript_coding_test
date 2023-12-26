@@ -1,6 +1,5 @@
 function solution(s){
     let length = Math.floor(s.length / 2);
-    let b = 5/2
     let i = 0;
     let j = s.length-1;
                 

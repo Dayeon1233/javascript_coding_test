@@ -20,7 +20,7 @@ function solution(test){
             }
 
         }
-        if(checkM == arr.length - 1){
+        if(checkM == test.length - 1){
             answer++;
             if(j == test[0].length - 1){
                 i++;
