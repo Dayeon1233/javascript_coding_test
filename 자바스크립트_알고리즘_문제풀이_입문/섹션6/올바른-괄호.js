@@ -22,4 +22,5 @@ function solution(s){
 
 let a="(()(()))(()";
 let b="(())(((())))"
-console.log(solution(b));
+let c="(()(()))(()"
+console.log(solution(c));
